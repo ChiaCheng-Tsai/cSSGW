@@ -4,7 +4,7 @@
 #define SSGW_M_HPP
 
 #include <iostream>
-#include "Mconvert2.h"
+#include "matlab2cpp.h"
 #include <cstdio>
 #include <armadillo>
 #include <cmath>
