@@ -13,6 +13,11 @@
 using namespace arma ;
 
 /*
+
+% cSSGW: Periodic Surface Gravity Waves (c++ version) (https://github.com/FiniteTsai/cSSGW)
+% This c++ code is modified from the SSGW of Denys Dutykh by using matlab2cpp
+% Some information from SSGW are provided in the following:
+
 % SSGW: Steady Surface Gravity Waves.
 %       Computation of irrotational 2D periodic surface pure gravity waves
 %       of arbitrary length in arbitrary depth.
@@ -51,19 +56,6 @@ using namespace arma ;
 % Hd=0.7; Ld=10000; kd=2*pi/Ld; kH2=pi*Hd/Ld; [zs,ws,PP]=SSGW(kd,kH2,2^19);
 %
 % The program works for all but the (almost) highest waves.
-% Edit the m-file for more details.
-
-% For details of the algorithm and the notations, read:
-% Clamond, D. & Dutykh, D. 2017. Accurate fast computation of steady
-% two-dimensional surface gravity waves in arbitrary depth. Preprint.
-% https://hal.archives-ouvertes.fr/hal-01465813/
-%
-% This m-file was written with the purpose of clarity. The notations closely
-% match those of the paper above.
-
-% Authors: D. Clamond & D. Dutykh.
-% Version: 2017-02-08.
-
 %--------------------------------------------------------------------------*/
 
 void SSGW(double kd, double kH2, cx_vec& zs, cx_vec& ws, vec& PP, int N=2048, double tol=1.e-14)
