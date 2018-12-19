@@ -1,4 +1,4 @@
-# SSGW++: Periodic Surface Gravity Waves (c++ version)
+# cSSGW: Periodic Surface Gravity Waves (c++ version)
 
 This c++ code is modified from the [SSGW](https://github.com/dutykh/SSGW) of Denys Dutykh by using [matlab2cpp](https://github.com/jonathf/matlab2cpp)
 
